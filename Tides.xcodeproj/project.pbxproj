@@ -15,9 +15,17 @@
 		6A54AEE6157090180097BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEE5157090180097BF93 /* main.m */; };
 		6A54AEEA157090180097BF93 /* UBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEE9157090180097BF93 /* UBAppDelegate.m */; };
 		6A54AEED157090180097BF93 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */; };
-		6A54AEF0157090180097BF93 /* Tides.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEEE157090180097BF93 /* Tides.xcdatamodeld */; };
 		6A54AEF3157090180097BF93 /* UBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEF2157090180097BF93 /* UBMasterViewController.m */; };
 		6A54AEF6157090180097BF93 /* UBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEF5157090180097BF93 /* UBDetailViewController.m */; };
+		6A54AEFE1570947D0097BF93 /* HW6.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEFC1570947D0097BF93 /* HW6.xcdatamodeld */; };
+		6A54AF03157095170097BF93 /* PCEPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF00157095170097BF93 /* PCEPrediction.m */; };
+		6A54AF04157095170097BF93 /* PCETideStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF02157095170097BF93 /* PCETideStation.m */; };
+		6A54AF11157097250097BF93 /* PCEFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF06157097250097BF93 /* PCEFetcher.m */; };
+		6A54AF12157097250097BF93 /* PCEParsePredictionsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF08157097250097BF93 /* PCEParsePredictionsOperation.m */; };
+		6A54AF13157097250097BF93 /* PCEParseStationsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF0A157097250097BF93 /* PCEParseStationsOperation.m */; };
+		6A54AF14157097250097BF93 /* PCEParseXMLOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF0C157097250097BF93 /* PCEParseXMLOperation.m */; };
+		6A54AF15157097250097BF93 /* PCETidePredictionsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF0E157097250097BF93 /* PCETidePredictionsFetcher.m */; };
+		6A54AF16157097250097BF93 /* PCETideStationFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF10157097250097BF93 /* PCETideStationFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,18 +34,34 @@
 		6A54AED9157090180097BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A54AEDB157090180097BF93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6A54AEDD157090180097BF93 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		6A54AEE1157090180097BF93 /* Tides-Info.plist */ = {isa = PBXFileReference; path = "Tides-Info.plist"; sourceTree = "<group>"; };
+		6A54AEE1157090180097BF93 /* Tides-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tides-Info.plist"; sourceTree = "<group>"; };
 		6A54AEE3157090180097BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A54AEE5157090180097BF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6A54AEE7157090180097BF93 /* Tides-Prefix.pch */ = {isa = PBXFileReference; path = "Tides-Prefix.pch"; sourceTree = "<group>"; };
-		6A54AEE8157090180097BF93 /* UBAppDelegate.h */ = {isa = PBXFileReference; path = UBAppDelegate.h; sourceTree = "<group>"; };
+		6A54AEE7157090180097BF93 /* Tides-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tides-Prefix.pch"; sourceTree = "<group>"; };
+		6A54AEE8157090180097BF93 /* UBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBAppDelegate.h; sourceTree = "<group>"; };
 		6A54AEE9157090180097BF93 /* UBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBAppDelegate.m; sourceTree = "<group>"; };
 		6A54AEEC157090180097BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6A54AEEF157090180097BF93 /* Tides.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tides.xcdatamodel; sourceTree = "<group>"; };
-		6A54AEF1157090180097BF93 /* UBMasterViewController.h */ = {isa = PBXFileReference; path = UBMasterViewController.h; sourceTree = "<group>"; };
+		6A54AEF1157090180097BF93 /* UBMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBMasterViewController.h; sourceTree = "<group>"; };
 		6A54AEF2157090180097BF93 /* UBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBMasterViewController.m; sourceTree = "<group>"; };
-		6A54AEF4157090180097BF93 /* UBDetailViewController.h */ = {isa = PBXFileReference; path = UBDetailViewController.h; sourceTree = "<group>"; };
+		6A54AEF4157090180097BF93 /* UBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBDetailViewController.h; sourceTree = "<group>"; };
 		6A54AEF5157090180097BF93 /* UBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBDetailViewController.m; sourceTree = "<group>"; };
+		6A54AEFD1570947D0097BF93 /* HW6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HW6.xcdatamodel; sourceTree = "<group>"; };
+		6A54AEFF157095170097BF93 /* PCEPrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEPrediction.h; sourceTree = "<group>"; };
+		6A54AF00157095170097BF93 /* PCEPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEPrediction.m; sourceTree = "<group>"; };
+		6A54AF01157095170097BF93 /* PCETideStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCETideStation.h; sourceTree = "<group>"; };
+		6A54AF02157095170097BF93 /* PCETideStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCETideStation.m; sourceTree = "<group>"; };
+		6A54AF05157097250097BF93 /* PCEFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEFetcher.h; sourceTree = "<group>"; };
+		6A54AF06157097250097BF93 /* PCEFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEFetcher.m; sourceTree = "<group>"; };
+		6A54AF07157097250097BF93 /* PCEParsePredictionsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEParsePredictionsOperation.h; sourceTree = "<group>"; };
+		6A54AF08157097250097BF93 /* PCEParsePredictionsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEParsePredictionsOperation.m; sourceTree = "<group>"; };
+		6A54AF09157097250097BF93 /* PCEParseStationsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEParseStationsOperation.h; sourceTree = "<group>"; };
+		6A54AF0A157097250097BF93 /* PCEParseStationsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEParseStationsOperation.m; sourceTree = "<group>"; };
+		6A54AF0B157097250097BF93 /* PCEParseXMLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEParseXMLOperation.h; sourceTree = "<group>"; };
+		6A54AF0C157097250097BF93 /* PCEParseXMLOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEParseXMLOperation.m; sourceTree = "<group>"; };
+		6A54AF0D157097250097BF93 /* PCETidePredictionsFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCETidePredictionsFetcher.h; sourceTree = "<group>"; };
+		6A54AF0E157097250097BF93 /* PCETidePredictionsFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCETidePredictionsFetcher.m; sourceTree = "<group>"; };
+		6A54AF0F157097250097BF93 /* PCETideStationFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCETideStationFetcher.h; sourceTree = "<group>"; };
+		6A54AF10157097250097BF93 /* PCETideStationFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCETideStationFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +112,28 @@
 			children = (
 				6A54AEE8157090180097BF93 /* UBAppDelegate.h */,
 				6A54AEE9157090180097BF93 /* UBAppDelegate.m */,
-				6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */,
 				6A54AEF1157090180097BF93 /* UBMasterViewController.h */,
 				6A54AEF2157090180097BF93 /* UBMasterViewController.m */,
+				6A54AF05157097250097BF93 /* PCEFetcher.h */,
+				6A54AF06157097250097BF93 /* PCEFetcher.m */,
+				6A54AF07157097250097BF93 /* PCEParsePredictionsOperation.h */,
+				6A54AF08157097250097BF93 /* PCEParsePredictionsOperation.m */,
+				6A54AF09157097250097BF93 /* PCEParseStationsOperation.h */,
+				6A54AF0A157097250097BF93 /* PCEParseStationsOperation.m */,
+				6A54AF0B157097250097BF93 /* PCEParseXMLOperation.h */,
+				6A54AF0C157097250097BF93 /* PCEParseXMLOperation.m */,
+				6A54AF0D157097250097BF93 /* PCETidePredictionsFetcher.h */,
+				6A54AF0E157097250097BF93 /* PCETidePredictionsFetcher.m */,
+				6A54AF0F157097250097BF93 /* PCETideStationFetcher.h */,
+				6A54AF10157097250097BF93 /* PCETideStationFetcher.m */,
+				6A54AEFF157095170097BF93 /* PCEPrediction.h */,
+				6A54AF00157095170097BF93 /* PCEPrediction.m */,
+				6A54AF01157095170097BF93 /* PCETideStation.h */,
+				6A54AF02157095170097BF93 /* PCETideStation.m */,
+				6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */,
 				6A54AEF4157090180097BF93 /* UBDetailViewController.h */,
+				6A54AEFC1570947D0097BF93 /* HW6.xcdatamodeld */,
 				6A54AEF5157090180097BF93 /* UBDetailViewController.m */,
-				6A54AEEE157090180097BF93 /* Tides.xcdatamodeld */,
 				6A54AEE0157090180097BF93 /* Supporting Files */,
 			);
 			path = Tides;
@@ -175,9 +215,17 @@
 			files = (
 				6A54AEE6157090180097BF93 /* main.m in Sources */,
 				6A54AEEA157090180097BF93 /* UBAppDelegate.m in Sources */,
-				6A54AEF0157090180097BF93 /* Tides.xcdatamodeld in Sources */,
 				6A54AEF3157090180097BF93 /* UBMasterViewController.m in Sources */,
 				6A54AEF6157090180097BF93 /* UBDetailViewController.m in Sources */,
+				6A54AEFE1570947D0097BF93 /* HW6.xcdatamodeld in Sources */,
+				6A54AF03157095170097BF93 /* PCEPrediction.m in Sources */,
+				6A54AF04157095170097BF93 /* PCETideStation.m in Sources */,
+				6A54AF11157097250097BF93 /* PCEFetcher.m in Sources */,
+				6A54AF12157097250097BF93 /* PCEParsePredictionsOperation.m in Sources */,
+				6A54AF13157097250097BF93 /* PCEParseStationsOperation.m in Sources */,
+				6A54AF14157097250097BF93 /* PCEParseXMLOperation.m in Sources */,
+				6A54AF15157097250097BF93 /* PCETidePredictionsFetcher.m in Sources */,
+				6A54AF16157097250097BF93 /* PCETideStationFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +339,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6A54AEEE157090180097BF93 /* Tides.xcdatamodeld */ = {
+		6A54AEFC1570947D0097BF93 /* HW6.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				6A54AEEF157090180097BF93 /* Tides.xcdatamodel */,
+				6A54AEFD1570947D0097BF93 /* HW6.xcdatamodel */,
 			);
-			currentVersion = 6A54AEEF157090180097BF93 /* Tides.xcdatamodel */;
-			path = Tides.xcdatamodeld;
+			currentVersion = 6A54AEFD1570947D0097BF93 /* HW6.xcdatamodel */;
+			path = HW6.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
