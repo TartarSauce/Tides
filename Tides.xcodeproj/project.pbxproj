@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A54AED8157090180097BF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A54AED7157090180097BF93 /* UIKit.framework */; };
+		6A54AEDA157090180097BF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A54AED9157090180097BF93 /* Foundation.framework */; };
+		6A54AEDC157090180097BF93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A54AEDB157090180097BF93 /* CoreGraphics.framework */; };
+		6A54AEDE157090180097BF93 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A54AEDD157090180097BF93 /* CoreData.framework */; };
+		6A54AEE4157090180097BF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A54AEE2157090180097BF93 /* InfoPlist.strings */; };
+		6A54AEE6157090180097BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEE5157090180097BF93 /* main.m */; };
+		6A54AEEA157090180097BF93 /* UBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEE9157090180097BF93 /* UBAppDelegate.m */; };
+		6A54AEED157090180097BF93 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */; };
+		6A54AEF0157090180097BF93 /* Tides.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEEE157090180097BF93 /* Tides.xcdatamodeld */; };
+		6A54AEF3157090180097BF93 /* UBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEF2157090180097BF93 /* UBMasterViewController.m */; };
+		6A54AEF6157090180097BF93 /* UBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AEF5157090180097BF93 /* UBDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A54AED3157090180097BF93 /* Tides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tides.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A54AED7157090180097BF93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A54AED9157090180097BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A54AEDB157090180097BF93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A54AEDD157090180097BF93 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6A54AEE1157090180097BF93 /* Tides-Info.plist */ = {isa = PBXFileReference; path = "Tides-Info.plist"; sourceTree = "<group>"; };
+		6A54AEE3157090180097BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A54AEE5157090180097BF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A54AEE7157090180097BF93 /* Tides-Prefix.pch */ = {isa = PBXFileReference; path = "Tides-Prefix.pch"; sourceTree = "<group>"; };
+		6A54AEE8157090180097BF93 /* UBAppDelegate.h */ = {isa = PBXFileReference; path = UBAppDelegate.h; sourceTree = "<group>"; };
+		6A54AEE9157090180097BF93 /* UBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBAppDelegate.m; sourceTree = "<group>"; };
+		6A54AEEC157090180097BF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6A54AEEF157090180097BF93 /* Tides.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tides.xcdatamodel; sourceTree = "<group>"; };
+		6A54AEF1157090180097BF93 /* UBMasterViewController.h */ = {isa = PBXFileReference; path = UBMasterViewController.h; sourceTree = "<group>"; };
+		6A54AEF2157090180097BF93 /* UBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBMasterViewController.m; sourceTree = "<group>"; };
+		6A54AEF4157090180097BF93 /* UBDetailViewController.h */ = {isa = PBXFileReference; path = UBDetailViewController.h; sourceTree = "<group>"; };
+		6A54AEF5157090180097BF93 /* UBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A54AED0157090180097BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A54AED8157090180097BF93 /* UIKit.framework in Frameworks */,
+				6A54AEDA157090180097BF93 /* Foundation.framework in Frameworks */,
+				6A54AEDC157090180097BF93 /* CoreGraphics.framework in Frameworks */,
+				6A54AEDE157090180097BF93 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A54AEC8157090170097BF93 = {
+			isa = PBXGroup;
+			children = (
+				6A54AEDF157090180097BF93 /* Tides */,
+				6A54AED6157090180097BF93 /* Frameworks */,
+				6A54AED4157090180097BF93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A54AED4157090180097BF93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A54AED3157090180097BF93 /* Tides.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A54AED6157090180097BF93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A54AED7157090180097BF93 /* UIKit.framework */,
+				6A54AED9157090180097BF93 /* Foundation.framework */,
+				6A54AEDB157090180097BF93 /* CoreGraphics.framework */,
+				6A54AEDD157090180097BF93 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A54AEDF157090180097BF93 /* Tides */ = {
+			isa = PBXGroup;
+			children = (
+				6A54AEE8157090180097BF93 /* UBAppDelegate.h */,
+				6A54AEE9157090180097BF93 /* UBAppDelegate.m */,
+				6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */,
+				6A54AEF1157090180097BF93 /* UBMasterViewController.h */,
+				6A54AEF2157090180097BF93 /* UBMasterViewController.m */,
+				6A54AEF4157090180097BF93 /* UBDetailViewController.h */,
+				6A54AEF5157090180097BF93 /* UBDetailViewController.m */,
+				6A54AEEE157090180097BF93 /* Tides.xcdatamodeld */,
+				6A54AEE0157090180097BF93 /* Supporting Files */,
+			);
+			path = Tides;
+			sourceTree = "<group>";
+		};
+		6A54AEE0157090180097BF93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A54AEE1157090180097BF93 /* Tides-Info.plist */,
+				6A54AEE2157090180097BF93 /* InfoPlist.strings */,
+				6A54AEE5157090180097BF93 /* main.m */,
+				6A54AEE7157090180097BF93 /* Tides-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A54AED2157090180097BF93 /* Tides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A54AEF9157090180097BF93 /* Build configuration list for PBXNativeTarget "Tides" */;
+			buildPhases = (
+				6A54AECF157090180097BF93 /* Sources */,
+				6A54AED0157090180097BF93 /* Frameworks */,
+				6A54AED1157090180097BF93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tides;
+			productName = Tides;
+			productReference = 6A54AED3157090180097BF93 /* Tides.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A54AECA157090170097BF93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6A54AECD157090170097BF93 /* Build configuration list for PBXProject "Tides" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A54AEC8157090170097BF93;
+			productRefGroup = 6A54AED4157090180097BF93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A54AED2157090180097BF93 /* Tides */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A54AED1157090180097BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A54AEE4157090180097BF93 /* InfoPlist.strings in Resources */,
+				6A54AEED157090180097BF93 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A54AECF157090180097BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A54AEE6157090180097BF93 /* main.m in Sources */,
+				6A54AEEA157090180097BF93 /* UBAppDelegate.m in Sources */,
+				6A54AEF0157090180097BF93 /* Tides.xcdatamodeld in Sources */,
+				6A54AEF3157090180097BF93 /* UBMasterViewController.m in Sources */,
+				6A54AEF6157090180097BF93 /* UBDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A54AEE2157090180097BF93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A54AEE3157090180097BF93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A54AEEC157090180097BF93 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A54AEF7157090180097BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A54AEF8157090180097BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A54AEFA157090180097BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tides/Tides-Prefix.pch";
+				INFOPLIST_FILE = "Tides/Tides-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A54AEFB157090180097BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tides/Tides-Prefix.pch";
+				INFOPLIST_FILE = "Tides/Tides-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A54AECD157090170097BF93 /* Build configuration list for PBXProject "Tides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A54AEF7157090180097BF93 /* Debug */,
+				6A54AEF8157090180097BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A54AEF9157090180097BF93 /* Build configuration list for PBXNativeTarget "Tides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A54AEFA157090180097BF93 /* Debug */,
+				6A54AEFB157090180097BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A54AEEE157090180097BF93 /* Tides.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A54AEEF157090180097BF93 /* Tides.xcdatamodel */,
+			);
+			currentVersion = 6A54AEEF157090180097BF93 /* Tides.xcdatamodel */;
+			path = Tides.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6A54AECA157090170097BF93 /* Project object */;
+}
