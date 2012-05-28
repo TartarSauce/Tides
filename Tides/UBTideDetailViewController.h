@@ -16,10 +16,6 @@ extern NSString* const PCETidePredictionsViewControllerKeyTideStation;
 
 @interface UBTideDetailViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
-//@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
-//@property (strong, nonatomic) id detailItem;
-
 @property (strong, nonatomic) PCETideStation *tideStation;
 
 @end

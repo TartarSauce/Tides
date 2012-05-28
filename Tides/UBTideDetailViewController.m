@@ -23,10 +23,7 @@
 @implementation UBTideDetailViewController
 
 @synthesize tideStation;
-
-//@synthesize detailItem = _detailItem;
 @synthesize fetchedResultsController = _fetchedResultsController;
-//@synthesize managedObjectContext = _managedObjectContext;
 @synthesize timeFormatter = _timeFormatter;
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -41,24 +38,12 @@
 
 #pragma mark - Managing the detail item
 
-/*- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        [_detailItem release];
-        _detailItem = [newDetailItem retain];
-        
-        // Update the view.
-        //[self configureView];
-    }
-} */
-
 - (void)dealloc
 {
    // [self removeObserver:self forKeyPath:PCETidePredictionsViewControllerKeyTideStation];
     _fetchedResultsController.delegate = nil;
     [_fetchedResultsController release];
     [_timeFormatter release];
-   // [_managedObjectContext release];
     [super dealloc];
 }
 
@@ -308,7 +293,5 @@
     
     return _timeFormatter;
 }
-
-
 
 @end

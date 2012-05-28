@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "UBDetailViewController.h"
+/*#import "UBDetailViewController.h"
 
 @interface UBDetailViewController ()
 - (void)configureView;
@@ -66,3 +66,4 @@
 }
 
 @end
+ */
