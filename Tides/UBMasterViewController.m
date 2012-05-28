@@ -8,9 +8,11 @@
 
 #import "UBMasterViewController.h"
 
-#import "UBDetailViewController.h"
+#import "UBTideDetailViewController.h"
 
 #import "PCETideStationFetcher.h"
+#import "PCETideStation.h"
+#import "PCETidePredictionsFetcher.h"
 
 @interface UBMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -101,7 +103,7 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -128,10 +130,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"showTidesDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+       /* NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
         [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext]; */
+
+        PCETideStation *station = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        UBTideDetailViewController *controller = [segue destinationViewController];
+        [controller setTideStation:station];
+        [PCETidePredictionsFetcher fetchPredictionsForTideStation:station];
     }
 }
 

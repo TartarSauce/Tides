@@ -26,6 +26,8 @@
 		6A54AF14157097250097BF93 /* PCEParseXMLOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF0C157097250097BF93 /* PCEParseXMLOperation.m */; };
 		6A54AF15157097250097BF93 /* PCETidePredictionsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF0E157097250097BF93 /* PCETidePredictionsFetcher.m */; };
 		6A54AF16157097250097BF93 /* PCETideStationFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF10157097250097BF93 /* PCETideStationFetcher.m */; };
+		6A54AF4A15713DC10097BF93 /* UBTideDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54AF4915713DC10097BF93 /* UBTideDetailViewController.m */; };
+		6A83AF771573DF4F00650648 /* UBTidePredictionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A83AF761573DF4F00650648 /* UBTidePredictionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,10 @@
 		6A54AF0E157097250097BF93 /* PCETidePredictionsFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCETidePredictionsFetcher.m; sourceTree = "<group>"; };
 		6A54AF0F157097250097BF93 /* PCETideStationFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCETideStationFetcher.h; sourceTree = "<group>"; };
 		6A54AF10157097250097BF93 /* PCETideStationFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCETideStationFetcher.m; sourceTree = "<group>"; };
+		6A54AF4815713DC00097BF93 /* UBTideDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBTideDetailViewController.h; sourceTree = "<group>"; };
+		6A54AF4915713DC10097BF93 /* UBTideDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBTideDetailViewController.m; sourceTree = "<group>"; };
+		6A83AF751573DF4F00650648 /* UBTidePredictionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBTidePredictionCell.h; sourceTree = "<group>"; };
+		6A83AF761573DF4F00650648 /* UBTidePredictionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBTidePredictionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,8 @@
 				6A54AEE9157090180097BF93 /* UBAppDelegate.m */,
 				6A54AEF1157090180097BF93 /* UBMasterViewController.h */,
 				6A54AEF2157090180097BF93 /* UBMasterViewController.m */,
+				6A54AEF4157090180097BF93 /* UBDetailViewController.h */,
+				6A54AEF5157090180097BF93 /* UBDetailViewController.m */,
 				6A54AF05157097250097BF93 /* PCEFetcher.h */,
 				6A54AF06157097250097BF93 /* PCEFetcher.m */,
 				6A54AF07157097250097BF93 /* PCEParsePredictionsOperation.h */,
@@ -131,9 +139,11 @@
 				6A54AF01157095170097BF93 /* PCETideStation.h */,
 				6A54AF02157095170097BF93 /* PCETideStation.m */,
 				6A54AEEB157090180097BF93 /* MainStoryboard.storyboard */,
-				6A54AEF4157090180097BF93 /* UBDetailViewController.h */,
+				6A83AF751573DF4F00650648 /* UBTidePredictionCell.h */,
+				6A83AF761573DF4F00650648 /* UBTidePredictionCell.m */,
+				6A54AF4815713DC00097BF93 /* UBTideDetailViewController.h */,
+				6A54AF4915713DC10097BF93 /* UBTideDetailViewController.m */,
 				6A54AEFC1570947D0097BF93 /* HW6.xcdatamodeld */,
-				6A54AEF5157090180097BF93 /* UBDetailViewController.m */,
 				6A54AEE0157090180097BF93 /* Supporting Files */,
 			);
 			path = Tides;
@@ -226,6 +236,8 @@
 				6A54AF14157097250097BF93 /* PCEParseXMLOperation.m in Sources */,
 				6A54AF15157097250097BF93 /* PCETidePredictionsFetcher.m in Sources */,
 				6A54AF16157097250097BF93 /* PCETideStationFetcher.m in Sources */,
+				6A54AF4A15713DC10097BF93 /* UBTideDetailViewController.m in Sources */,
+				6A83AF771573DF4F00650648 /* UBTidePredictionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +347,7 @@
 				6A54AEFB157090180097BF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
