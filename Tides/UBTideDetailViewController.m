@@ -11,6 +11,8 @@
 #import "PCEPrediction.h"
 #import "PCETideStation.h"
 
+NSString* const PCETidePredictionsViewControllerKeyTideStation = @"tideStation";
+
 @interface UBTideDetailViewController ()
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -25,6 +27,7 @@
 @synthesize tideStation;
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize timeFormatter = _timeFormatter;
+@synthesize headerStationName = _headerStationName;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -40,15 +43,16 @@
 
 - (void)dealloc
 {
-   // [self removeObserver:self forKeyPath:PCETidePredictionsViewControllerKeyTideStation];
+   [self removeObserver:self forKeyPath:PCETidePredictionsViewControllerKeyTideStation];
     _fetchedResultsController.delegate = nil;
     [_fetchedResultsController release];
     [_timeFormatter release];
+    [_headerStationName release];
     [super dealloc];
 }
 
 - (void) awakeFromNib {
-   //[self addObserver:self forKeyPath:PCETidePredictionsViewControllerKeyTideStation options:0 context:nil];
+   [self addObserver:self forKeyPath:PCETidePredictionsViewControllerKeyTideStation options:0 context:nil];
 }
 
 - (void)viewDidLoad
@@ -76,11 +80,11 @@
 
 #pragma mark  - KVO
 
-/*- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:PCETidePredictionsViewControllerKeyTideStation]) {
-        NSLog(@"station name is here");
+           self.headerStationName.text = self.tideStation.name;
     }
-}*/
+}
 
 #pragma mark - Table view data source
 
@@ -282,6 +286,7 @@
         value = [NSString stringWithFormat:@"%0.2f ft", [prediction.value floatValue]]; 
     }
     cell.value.text = value;
+    self.headerStationName.text = self.tideStation.name;
 }
 
 - (NSDateFormatter*) timeFormatter {

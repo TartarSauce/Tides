@@ -86,7 +86,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Station Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9nq-br-2K0">
-                                    <rect key="frame" x="20" y="0.0" width="185" height="33"/>
+                                    <rect key="frame" x="20" y="0.0" width="286" height="33"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -140,6 +140,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tides" id="jX9-rf-59S"/>
+                    <connections>
+                        <outlet property="headerStationName" destination="9nq-br-2K0" id="zP8-RX-svv"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="886" y="126"/>
@@ -154,6 +157,9 @@
         </class>
         <class className="UBTideDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UBTideDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerStationName" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="UBTidePredictionCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UBTidePredictionCell.h"/>
